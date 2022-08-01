@@ -98,7 +98,7 @@ if number > 75:
 elif number < 60:
     print('small num')
 else:
-    print("just right")
+    print("change made")
 
 
 
