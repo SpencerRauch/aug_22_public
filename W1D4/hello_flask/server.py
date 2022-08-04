@@ -14,13 +14,20 @@ def success():
 
 @app.route('/hello/<name>/<int:times>')
 def hello(name,times):
-
-    str = name * times
-    return str
+    return render_template("jinja.html", name=name, times=times)
 
 @app.route('/template')
 def template():
-    return render_template("index.html")
+    student_info = [
+       {'name' : 'Michael', 'age' : 35},
+       {'name' : 'John', 'age' : 30 },
+       {'name' : 'Mark', 'age' : 25},
+       {'name' : 'KB', 'age' : 27}
+    ]
+    dict = {'test':9}
+    return render_template("index.html",student_info=student_info, dict=dict)
+
+
 
 @app.errorhandler(404)
 def error_page(e):

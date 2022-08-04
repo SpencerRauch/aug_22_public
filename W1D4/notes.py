@@ -2,6 +2,7 @@
 ternary
 _________ ? _____ : _____
  conditon   true    false
+^ this is for js, not python
 
 pip install pipenv (windows)
 pip3 install pipenv (osx)
@@ -30,4 +31,11 @@ rendering templates:
 import render_template from flask
 must have "templates" folder same level as server
 return render_template('template.html')
+"""
+
+"""
+Afternoon notes:
+
+
+
 """
